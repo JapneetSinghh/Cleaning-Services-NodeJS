@@ -19,7 +19,7 @@
     position: fixed;
     width: 300px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: var(--transition);
+    transition: 0.3s all linear;
     z-index: 1;
     top: 0;
     display: flex;
@@ -85,4 +85,37 @@
 
 .colored {
 color: var(--red);
+}
+.sidebarDashboardToggle,.sidebarDashboardClose{
+    background: transparent;
+    font-size: 25px;
+    border: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+    color: var(--lblue);
+    transition: 0.3s all linear;
+}
+.sidebarDashboardClose{
+    color: red;
+}
+.sidebarDashboardToggle:hover{
+    color: red;
+}
+.sidebarDashboardClose:hover{
+    color: var(--lblue);
+}
+
+.hideDashboardSidebar{
+transform: translateX(-100%);
+}
+.hideDashboardSidebar #dashboardContainer {
+    margin-left: 0px;
+}
+.marginFull{
+    margin-left: 0 !important;
+}
+@media screen and (max-width:850px) {
+    #dashboardContainer{
+        margin-left: 0;
+    }
 }

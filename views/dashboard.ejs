@@ -19,7 +19,10 @@
 </head>
 
 <body>
-    <aside id="sidebarDashboard">
+    <aside id="sidebarDashboard" >
+        <div style="position:absolute; right: 30px; top: 30px;">
+            <button class="sidebarDashboardClose"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
         <div class="sidebarLogo">
             <a href="/">
                 <img src="./img/logo.png" alt="">
@@ -38,10 +41,12 @@
         </form>
     </aside>
     <div id="dashboardContainer">
-        <div id="topBar">
+        <div id="topBar" class="flexRow justifySpaceBetween">
             <h3>Dashboard / <span class="colored">Book Service</span></h3>
+          <button class="sidebarDashboardToggle"><i class="fas fa-bars"></i></button>
         </div>
       
     </div>
+    <script src="./js/dashboardSidebar.js"></script>
 </body>
 </html>
