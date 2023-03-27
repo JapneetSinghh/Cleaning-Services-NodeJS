@@ -3,6 +3,10 @@
 2 express
 3 ejs
 4 bodyparser
+5 cookie-parser
+6 express-session
+7 connect-mongodb-session
+8 mongoose
 
 ---- Commands Used in terminal
 1 npm init
@@ -10,6 +14,10 @@
 3 npm install --save express
 4 npm install --save ejs
 5 npm install --save body-parser
+6 npm install --save cookie-parser
+7 npm install --save express-session
+8 npm install --save connect-mongodb-session
+9 npm install --save mongoose
 
 ---- Files ----
 1 app.js 
