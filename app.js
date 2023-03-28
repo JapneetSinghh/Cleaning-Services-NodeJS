@@ -6,11 +6,14 @@ const app = express();
 const path = require('path');
 
 // Serving Public folder as static for assets and css
-app.use(express.static(path.join(__dirname, 'Public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Adding body parser
 const bodyParse = require('body-parser');
 app.use(bodyParse.urlencoded({ extended: false }));
+
+// npm install --save connect-flash
+var flash = require('connect-flash');
 
 // Importing Mongoose
 const mongoose = require('mongoose');
@@ -39,8 +42,12 @@ app.use(
 // Serving login status to all pages
 app.use((req, res, next) => {
   res.locals.isLoggedIn = req.session.isLoggedIn;
+  res.locals.user = req.session.user;
   next();
 })
+
+// USING FLASH FUNCTION TO SEND RESPONSES TO USER
+app.use(flash());
 
 
 const homeRoutes = require('./routes/home');

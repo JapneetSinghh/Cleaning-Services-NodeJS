@@ -36,9 +36,16 @@
                     <section class="loginFormContainer">
                         <img src="./img/logo.png" alt="">
                         <p>Hello, who’s this?</p>
+                        <%if(message){%>
+                            <div class="<%=messageClass%>">
+                                <p>
+                                    <%= message%>
+                                </p>
+                            </div>
+                            <%}%>
                         <form action="/login" method="post">
                             <label for="Email">Email</label>
-                            <input value="" type="text" name="email" placeholder="japneet@gmail.com">
+                            <input value="<%=email%>" type="text" name="email" placeholder="japneet@gmail.com">
                             <label for="Email">Password</label>
                             <input value="" name="password" type="password" placeholder="At least 6 characters">
                             <button type="submit">LogIn to OneStepAwayCleaner</button>

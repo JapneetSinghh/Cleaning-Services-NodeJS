@@ -169,3 +169,19 @@ input {
     filter: blur(0px);
     -webkit-filter: blur(0px);
 }
+
+.errorFlash p, .successFlash p {
+    all: unset !important;
+}
+
+.errorFlash, .successFlash {
+    background-color: rgb(255, 89, 89) !important;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.successFlash {
+    background-color: teal !important;
+}

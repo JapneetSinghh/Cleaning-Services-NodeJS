@@ -15,11 +15,11 @@
                     100%">
                         <div class="flexInputDiv">
                             <label for="FirstName">First Name</label>
-                            <input value="" type="text" name="firstName" placeholder="John">
+                            <input value="<%= user.firstName%>" type="text" name="firstName" placeholder="John">
                         </div>
                         <div class="flexInputDiv">
                             <label for="LastName">Last Name</label>
-                            <input value="" type="text" name="lastName" placeholder="Doe">
+                            <input value="<%= user.lastName%>" type="text" name="lastName" placeholder="Doe">
                         </div>
                     </div>
 
@@ -28,11 +28,11 @@
                     <div class="flexRow flexRowToColumn alignItemsCenter" style="width:
                     100%">
                         <div class="flexInputDiv">
-                            <label for="FirstName">Email</label>
-                            <input value="" type="email" name="email" placeholder="john@gmail.com">
+                            <label for="email">Email</label>
+                            <input value="<%= user.email%>" type="email" name="email" placeholder="john@gmail.com">
                         </div>
                         <div class="flexInputDiv">
-                            <label for="Email">Contact Number</label>
+                            <label for="contactNumber">Contact Number</label>
                             <input value="" type="text" name="contactNumber" placeholder="+1 (XXX) XXX-XXXX">
                         </div>
                     </div>
