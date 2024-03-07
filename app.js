@@ -108,7 +108,7 @@ mongoose.connect(MONGODB_URI)
       }
     })
 
-    const port = process.env.PORT || 3000;
+    const port = process.env.PORT || 4000;
     // Starting the server
     app.listen(port, () => {
       console.log('Listening on port 3000');
