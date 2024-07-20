@@ -69,7 +69,7 @@ app.use(errorController.get404);
 
 // Setting the view engine as ejs
 app.set('view engine', 'ejs');
-app.set('views', 'views')
+app.set('views', path.join(__dirname, 'views'));
 
 
 const bcryptjs = require('bcryptjs');
